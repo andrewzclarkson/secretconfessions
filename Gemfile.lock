@@ -167,7 +167,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   cucumber-rails
   factory_girl_rails
-  haml-rails (~> 0.3.4)
+  haml-rails
   jquery-rails
   launchy
   rails (= 3.2.1)
