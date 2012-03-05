@@ -7,8 +7,6 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 
-gem 'haml'
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -25,15 +23,15 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-		gem "haml-rails"
-		gem "rspec-rails"
+		gem 'haml-rails'
+		gem 'rspec-rails'
 end
 
 group :test do
-  gem "factory_girl_rails"
-  gem "cucumber-rails"
-  gem "capybara"
-  gem "launchy"
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 # To use ActiveModel has_secure_password
