@@ -32,7 +32,18 @@ module Secretconfessions
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    
+    # PSB: Configure generators values; make HAML, RSpec and Factory Girl defaults for Rails 3 generators
+    config.generators do |g|
+      g.template_engine :haml
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl
+    end
 
+    # PSB: Make lib directory autoloaded in Rails 3+; change from Rails 2x; see https://gist.github.com/989132
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
+     
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
