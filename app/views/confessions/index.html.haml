@@ -1,0 +1,20 @@
+%h1 Call in and leave your Secret Confessions
+%h2 (415) 889-8608
+
+%table
+  %tr
+    %th Areacode
+    %th
+    %th
+    %th
+
+  - @confessions.each do |confession|
+    %tr
+      %td= confession.areacode
+      %td= link_to 'Show', confession
+      %td= link_to 'Edit', edit_confession_path(confession)
+      %td= link_to 'Destroy', confession, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Confession', new_confession_path

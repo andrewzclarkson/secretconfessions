@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Areacode:
+  = @confession.areacode
+
+= link_to 'Edit', edit_confession_path(@confession)
+\|
+= link_to 'Back', confessions_path

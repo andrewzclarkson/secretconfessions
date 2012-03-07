@@ -5,5 +5,5 @@ Feature: Manage voyeur home page
 	
   Scenario: Voyeur visit
     Given I am on the home page
-    Then I should see "123-456-7890"
+    Then I should see "(415) 889-8608"
     And show me the page
