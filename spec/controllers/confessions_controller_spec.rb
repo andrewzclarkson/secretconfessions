@@ -33,6 +33,10 @@ describe ConfessionsController do
   def valid_session
     {}
   end
+  
+  ### Andrews specs
+  ### END Andrews specs
+  
 
   describe "GET index" do
     it "assigns all confessions as @confessions" do

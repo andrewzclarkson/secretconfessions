@@ -2,6 +2,10 @@ require "spec_helper"
 
 describe ConfessionsController do
   describe "routing" do
+  
+    it "routes to #index" do
+      get("/").should route_to("confessions#index")
+    end
 
     it "routes to #index" do
       get("/confessions").should route_to("confessions#index")
