@@ -2,8 +2,6 @@ Secretconfessions::Application.routes.draw do
 
   resources :confessions
   
-  post '/calling/index.json' => 'calling'
-  
   root :to => 'confessions#index'
 
   # The priority is based upon order of creation:

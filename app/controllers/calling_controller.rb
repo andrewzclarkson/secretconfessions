@@ -1,6 +1,6 @@
 class CallingController < ApplicationController
-  use Rack::Session::Pool
 
+def hello
   post '/calling/index.json' do
 
     tropo = Tropo::Generator.new do
@@ -9,6 +9,8 @@ class CallingController < ApplicationController
     tropo.response
 
   end
+  
+  
 
   # post '/calling/index.json' do
   # 
