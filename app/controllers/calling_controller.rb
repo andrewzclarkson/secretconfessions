@@ -8,7 +8,6 @@ class CallingController < ApplicationController
       end
       tropo.response
 
-    end
   end
 
   # post '/calling/index.json' do
