@@ -1,7 +1,7 @@
 class CallingController < ApplicationController
 
   def hello
-    post '/incoming.json' do
+#    post '/incoming.json' do
 
       tropo = Tropo::Generator.new do
         say 'Hello World! Hello World! Hello World!'
