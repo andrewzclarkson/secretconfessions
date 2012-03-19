@@ -3,6 +3,10 @@ Secretconfessions::Application.routes.draw do
   resources :confessions
   
   root :to => 'confessions#index'
+  
+  controller :calling do
+     post 'incoming' => :hello
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
