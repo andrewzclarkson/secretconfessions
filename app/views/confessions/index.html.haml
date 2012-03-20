@@ -1,5 +1,4 @@
 #headimg
-  #phonenumber (415) 889-8608
 
 #sentence
   Call in to leave an anonymous confession of your own!
@@ -11,15 +10,14 @@
       %th Areacode
       %th Confessed At
       %th
-      %th
   %tbody
     - @confessions.each do |confession|
       %tr
         %td= link_to confession.areacode, confession
         %td= confession.created_at
-        %td= link_to 'Edit', edit_confession_path(confession), :class => 'btn btn-mini'
-        %td= link_to 'Destroy', confession, :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger'
-
+        %td
+          = link_to 'Edit', edit_confession_path(confession), :class => 'btn btn-mini'
+          = link_to 'Destroy', confession, :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger'
 %br
 
 = link_to 'New Confession', new_confession_path, :class => 'btn btn-primary'

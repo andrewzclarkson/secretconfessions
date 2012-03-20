@@ -12,7 +12,6 @@
  *= require_tree .
 */
 
-
 // First import cerulean variables
 @import "bootswatch/cerulean/variables";
 
@@ -20,7 +19,7 @@
 @import "bootstrap";
 
 // Bootstrap body padding for fixed navbar
-body { padding-top: 40px; }
+body { padding-top: 40px; color: #ffffff; }
 
 // Responsive styles go here in case you want them
 @import "bootstrap-responsive";
@@ -30,3 +29,9 @@ body { padding-top: 40px; }
 
 // Whatever application styles you have go last
 //@import "base";
+
+// Controls the phone number at the top of the page in the navbar
+li h2 { 
+  padding-right: 60px;
+  color: #369bd7;
+}

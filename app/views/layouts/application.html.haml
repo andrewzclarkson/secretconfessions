@@ -1,0 +1,40 @@
+!!!
+%html
+  %head
+    %title Secretconfessions
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Secret Confessions
+          .nav-collapse
+            %ul.nav.pull-right
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Sort by
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+                  %li
+                    %a{:href => "#"} Something else here
+                  %li.divider
+                  %li.nav-header Nav header
+                  %li
+                    %a{:href => "#"} Separated link
+                  %li
+                    %a{:href => "#"} One more separated link
+            %ul.nav.pull-right
+              %li
+                %h2="Ready to leave yours? (415) 889-8608"
+    .container
+      = yield
