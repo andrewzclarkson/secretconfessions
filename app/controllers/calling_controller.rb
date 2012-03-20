@@ -1,13 +1,10 @@
 class CallingController < ApplicationController
 
   def hello
-   post '/incoming.json' do
-
-      tropo = Tropo::Generator.new do
-        say 'Hello World! Hello World! Hello World!'
-      end
-      tropo.response
+    tropo = Tropo::Generator.new do
+      say 'Hello World! Hello World! Hello World!'
     end
+    tropo.hangup
   end
 
   # post '/calling/index.json' do
