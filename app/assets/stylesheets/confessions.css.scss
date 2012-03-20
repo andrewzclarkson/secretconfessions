@@ -1,3 +1,10 @@
 // Place all the styles related to the Confessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#headimg {
+  height: 264px;
+  background-image: url(/assets/shhheader.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
