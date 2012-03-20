@@ -5,7 +5,7 @@ Secretconfessions::Application.routes.draw do
   root :to => 'confessions#index'
   
   controller :calling do
-     post 'incoming' => :hello
+     post 'incoming' => :index
   end
 
   # The priority is based upon order of creation:
