@@ -4,6 +4,9 @@
       %th Areacode
       %th Confessed At
       %th
+      %th
+      %th
+      %th
   %tbody
     - @confessions.each do |confession|
       %tr
@@ -12,6 +15,9 @@
         %td
           = link_to 'Edit', edit_confession_path(confession), :class => 'btn btn-mini'
           = link_to 'Destroy', confession, :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger'
+        %td
+        %td
+        %td
 %br
 
 = link_to 'New Confession', new_confession_path, :class => 'btn btn-primary'
