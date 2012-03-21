@@ -33,13 +33,6 @@ module Secretconfessions
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     
-    # PSB: Configure generators values; make HAML, RSpec and Factory Girl defaults for Rails 3 generators
-    # config.generators do |g|
-    #   g.template_engine :haml
-    #   g.test_framework :rspec
-    #   g.fixture_replacement :factory_girl
-    # end
-    
     # PSB: Make lib directory autoloaded in Rails 3+; change from Rails 2x; see https://gist.github.com/989132
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
@@ -63,6 +56,9 @@ module Secretconfessions
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    
+    #AZC
+    config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
