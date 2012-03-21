@@ -38,3 +38,19 @@ li h2 {
   padding-right: 60px;
   color: #369bd7;
 }
+
+// Controls the shhhh image
+#headimg {
+  height: 264px;
+  background-image: url(/assets/shhheader.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+// Controls the line below the image
+#sentence {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 36px;
+  text-align: center;
+}
