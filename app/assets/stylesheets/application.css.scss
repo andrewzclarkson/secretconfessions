@@ -11,23 +11,21 @@
  *= require_self
  *= require_tree .
 */
-@import "bootstrap";
-
 
 // First import cerulean variables
-// @import "bootswatch/cerulean/variables";
+@import "bootswatch/cerulean/variables";
 
 // Then bootstrap itself
-// @import "bootstrap";
+@import "bootstrap";
 
 // Bootstrap body padding for fixed navbar
-// body { padding-top: 40px; color: #ffffff; }
+body { padding-top: 40px; }
 
 // Responsive styles go here in case you want them
-// @import "bootstrap-responsive";
+@import "bootstrap-responsive";
 
 // And finally bootswatch style itself
-// @import "bootswatch/cerulean/bootswatch";
+@import "bootswatch/cerulean/bootswatch";
 
 // Whatever application styles you have go last
 // @import "base";
@@ -35,8 +33,7 @@
 
 // Controls the phone number at the top of the page in the navbar
 li h2 { 
-  padding-right: 60px;
-  color: #369bd7;
+  color: white;
 }
 
 // Controls the shhhh image
