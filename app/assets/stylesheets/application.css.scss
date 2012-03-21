@@ -13,7 +13,7 @@
 */
 
 // First import cerulean variables
-@import "bootswatch/cerulean/variables";
+// @import "bootswatch/cerulean/variables";
 
 // Then bootstrap itself
 @import "bootstrap";
@@ -25,10 +25,11 @@ body { padding-top: 40px; color: #ffffff; }
 @import "bootstrap-responsive";
 
 // And finally bootswatch style itself
-@import "bootswatch/cerulean/bootswatch";
+// @import "bootswatch/cerulean/bootswatch";
 
 // Whatever application styles you have go last
-//@import "base";
+// @import "base";
+
 
 // Controls the phone number at the top of the page in the navbar
 li h2 { 
