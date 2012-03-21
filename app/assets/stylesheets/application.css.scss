@@ -11,18 +11,20 @@
  *= require_self
  *= require_tree .
 */
+@import "bootstrap";
+
 
 // First import cerulean variables
 // @import "bootswatch/cerulean/variables";
 
 // Then bootstrap itself
-@import "bootstrap";
+// @import "bootstrap";
 
 // Bootstrap body padding for fixed navbar
-body { padding-top: 40px; color: #ffffff; }
+// body { padding-top: 40px; color: #ffffff; }
 
 // Responsive styles go here in case you want them
-@import "bootstrap-responsive";
+// @import "bootstrap-responsive";
 
 // And finally bootswatch style itself
 // @import "bootswatch/cerulean/bootswatch";
