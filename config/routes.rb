@@ -4,8 +4,8 @@ Secretconfessions::Application.routes.draw do
   
   root :to => 'confessions#index'
   
-  match 'calling/incomingCall' => 'calling#incomingCall', :via => [:get, :post]
- # post 'calling/incomingCall' => 'calling#incomingCall'
+ # match 'calling/incomingCall' => 'calling#incomingCall', :via => [:get, :post]
+  post 'calling/incomingCall' => 'calling#incomingCall'
  # match 'calling#incomingSMS' => 'calling#incomingSMS', :via => [:get, :post]
 
   # The priority is based upon order of creation:
