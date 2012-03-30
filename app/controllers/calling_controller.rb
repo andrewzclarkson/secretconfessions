@@ -6,6 +6,7 @@ class CallingController < ApplicationController
     
     @confession = Confession.create(:areacode => params[:session][:from][:id])
    
+   
     # Generate Tropo response
     
     # t = Tropo::Generator.new
