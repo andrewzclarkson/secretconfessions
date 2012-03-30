@@ -4,6 +4,8 @@ Secretconfessions::Application.routes.draw do
   
   root :to => 'confessions#index'
   
+  get 'calling' => 'calling#index'
+  
  # match 'calling/incomingCall' => 'calling#incomingCall', :via => [:get, :post]
   post 'calling/incomingCall' => 'calling#incomingCall'
  # match 'calling#incomingSMS' => 'calling#incomingSMS', :via => [:get, :post]
