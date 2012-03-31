@@ -13,8 +13,16 @@ class CallingController < ApplicationController
     # Generate Tropo response
      
     t = Tropo::Generator.new
-      
-    t.say(:value => "Welcome to Secret Confessions. You have 30 seconds to make your confession and the recording will be posted anonymously to our site. Go for it.")
+    
+    t.record({ :name => 'recording',
+                 :url => 'mailto:andrew@launchcodelabs.com',
+                 :timeout => 10,
+                 :choices => { :terminator => "#"}
+                 }) do
+                      say :value => 'Welcome to Secret Confessions. You have 30 seconds to make your confession and the recording will be posted anonymously to our site.  Just hang up when you are finished. Now, go for it.'
+                  end
+                  
+    # t.say(:value => "Welcome to Secret Confessions. You have 30 seconds to make your confession and the recording will be posted anonymously to our site. Go for it.")
       
     render :text => t.response
    end
