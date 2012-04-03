@@ -14,17 +14,19 @@ class CallingController < ApplicationController
      
     t = Tropo::Generator.new
     
-    # t.record({ :name => 'recording',
-    #                 :url => 'mailto:andrew@launchcodelabs.com',
-    #                 :timeout => 10,
-    #                 :maxTime => 30, 
-    #                 :beep => true
-    #                 }) do
-    #                      say :value => 'Welcome to Secret Confessions. You have 30 seconds to make your confession and the recording will be posted anonymously to our site.  Just hang up when you are finished. Now, go for it.'
-    #                  end
-    #                  
-     t.say(:value => "Welcome to Secret Confessions. You have 30 seconds to make your confession and the recording will be posted anonymously to our site.  Just hang up when you are finished. Now, go for it.")
-      
+    # t.say(:value => "Welcome to Secret Confessions. You have 30 seconds to make your confession and the recording will be posted anonymously to our site.  Just hang up when you are finished.")
+    t.record({ :name => 'recording',
+                :timeout => 10,
+                :maxTime => 30,
+                :beep => true,
+                :recordFormat => "audio/mp3",
+                :url => "ftp://andrewzclarkson.com/confessions/filename.mp3",
+                :username => "tropo@andrewzclarkson.com",
+                :password => "SamplePassword1"
+                }) do
+                     say :value => 'Now, go for it.'
+                 end
+               
     render :text => t.response
    end
 end
