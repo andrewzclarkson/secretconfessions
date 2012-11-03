@@ -5,7 +5,7 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'tropo-webapi-ruby'
+gem 'twilio-ruby'
 gem 'heroku'
 gem 'haml-rails'
 gem 'jquery-rails'

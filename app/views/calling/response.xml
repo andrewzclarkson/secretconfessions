@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="woman">Thanks for calling Secret Confessions.  When you hear the beep confess it all and we will post it anonymously for the world to hear.  You have 1 minute, but simply press any key when you are finished."</Say>
+  <Beep/>
+  <Record action="http://secretconfessions.herokuapp.com/calling/recording" maxLength="59" finishOnKey="1234567890*#" />
+  <Hangup/>
+</Response>
