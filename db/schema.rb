@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120331022730) do
+ActiveRecord::Schema.define(:version => 20121103025042) do
 
   create_table "callings", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -20,8 +20,9 @@ ActiveRecord::Schema.define(:version => 20120331022730) do
 
   create_table "confessions", :force => true do |t|
     t.string   "areacode"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "recording_url"
   end
 
 end

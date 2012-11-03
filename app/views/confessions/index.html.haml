@@ -2,12 +2,14 @@
   %thead
     %tr
       %th Areacode
+      %th Recording
       %th Confessed At
       %th
   %tbody
     - @confessions.each do |confession|
       %tr
         %td= link_to confession.areacode, confession
+        %td= confession.recording_url
         %td= confession.created_at
         %td
           = link_to 'Edit', edit_confession_path(confession), :class => 'btn btn-mini'
